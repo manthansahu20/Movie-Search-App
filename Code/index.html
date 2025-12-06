@@ -1,39 +1,21 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Movie Finder</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <h1>Movie Search</h1>
 
-        <h1 class="title">🎬 ADVANCED MOVIE FINDER</h1>
-
-        <div class="search-area">
-            <input type="text" id="searchInput" placeholder="Type movie name..." onkeyup="autoSearch()" autocomplete="off" />
-        </div>
-
-        <!-- auto suggestion list -->
-        <ul id="suggestions"></ul>
-
-        <!-- loading -->
-        <div id="loading" class="loading">Loading...</div>
-
-        <!-- movie result -->
-        <div id="result" class="result"></div>
-
-        <h2 class="sub-title">🔥 Trending Movies</h2>
-        <div id="trending" class="trending"></div>
-
-        <h2 class="sub-title">❤️ Favorites</h2>
-        <div id="favorites" class="favorites"></div>
-
+    <div class="search-box">
+        <input type="text" id="movieInput" placeholder="Enter movie name...">
+        <button id="searchBtn">Search</button>
     </div>
+
+    <div id="result" class="movie-container"></div>
 
     <script src="script.js"></script>
 </body>
